@@ -147,7 +147,7 @@
                 </div>
                 <div>
                     <label for="age">Age:</label>
-                   <input type="age" id="age" name="age" required>
+                   <input type="number" id="age" name="age" min="18" max="60" required>
                 </div>
 
                 </div>
@@ -165,14 +165,17 @@
                     <label for="massage">Massage:</label>
                 </div>
                 <div>
-                    <textarea name="massage" id="massage" cols="30" rows="10"></textarea>
+                    <textarea name="massage" id="massage" cols="30" rows="10"></textarea> 
+                    <div>
+                        <button type="reset">Clear</button>
+                        <button type="submit">Submit</button>
+                    </div>
 
 
              </form>
         </fieldset>
          <!--Form: Section End-->
-          <button type="reset">Clear</button>
-         <button type="submit">Submit</button>
+
     </main>
   
     <!--Footer Section  Start--> 
