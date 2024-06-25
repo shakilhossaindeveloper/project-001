@@ -15,14 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <style>
-        body{
-            background-color: bisque;
-            font-family: "Roboto", sans-serif;
 
-        }
+    <link rel="stylesheet" href="style.css">
 
-    </style>
 </head>
 <body>
     <!-- navbar start -->
@@ -43,24 +38,28 @@
     <!--Section: Intro -->
     <main>
         <section id="intro">
-            <a href="https://www.facebook.com/shakilhossain404">
+            <div class="card">
+                            <a href="https://www.facebook.com/shakilhossain404">
                 <img src="/images/Md Shakil Hossain Picture.png" alt="Md Shakil Hossain Picture" height="200px width200px">
             </a>
     
             <h1>MD Shakil Hossain</h1>
             <p>Web Developer and SEO Expert</p>
-            <hr>
+            </div>
+
     
         </section>
     
     
         <!--Section: About ME -->
          <section id="about-me">
-            <h2>About Me </h2>
+            <div class="card">
+                  <h2>About Me </h2>
             <p> <strong>Experience:</strong> 3 months experience in web development & SEO 1 years</p>
             <p><strong> Education: </strong> Shyamnagar Government Mohsin Degree College</p>
+            </div>
+          
          </section>
-         <hr>
         
         <!--Section: Skills -->
         <section id="skills">
@@ -112,6 +111,47 @@
         <!--Table: Section End -->
     
         </section> 
+
+    <section>
+            <h3>Skills Progress</h3>
+            <div>
+           <label for="html-progress">HTML</label>
+           <progress id="html-progress" value="90" max="100">90%</progress>
+            </div>
+
+            <div>
+                <label for="css-progress">CSS</label>
+                <progress id="css-progress" value="90" max="100">90%</progress>
+            </div>
+            <label for="basicjavascript">Basic JavaScript</label>
+            <progress id="JavaScript" value="80" max="100">80%</progress>
+            <div>
+                <label for="onpageseo-progress">On Page SEO</label>
+                <progress id="onpageseo-progress" value="95" max="100">95%</progress>
+            </div>
+            <div>
+                <label for="technicalseo-progress">Technical SEO</label>
+                <progress id="technicalseo-progress" value="95" max="100">95%</progress>
+            </div>
+            <div>
+                <label for="offpageseo-progress">OFF Page SEO</label>
+                <progress id="offpageseo-progress" value="95" max="100">95%</progress>
+            </div>
+            <div>
+                <label for="marketplace">Which is the best freelancing Marketplace in the world</label>
+            <input list="nameofmarketplace" id="marketplace" name="marketplace">
+              
+            <datalist id="nameofmarketplace">
+                <option value="Fiver">
+                <option value="Freelancer">
+                <option value="Guru">
+                <option value="Upwork">
+                <option value="Bihanche">
+            </datalist>
+            </div>
+     
+    </section>
+    
       <hr>
     
         <!--Project Section start -->
@@ -149,8 +189,15 @@
                     <label for="age">Age:</label>
                    <input type="number" id="age" name="age" min="18" max="60" required>
                 </div>
-
+                <div>
+                    <label for="facebook url">Facebook URL</label>
+                    <input type="url" id="facebook" name="facebook" pattern="https?://.+">
                 </div>
+                <div>
+                    <label for="Image">Upload Image:</label>
+                    <input type="file" id="Image" name="Image" accept="image/*">
+                </div>
+        
                        <div>
                         <label for="subject">Subject:</label>
                         <select name="subject" id="subject">
@@ -177,25 +224,26 @@
          <!--Form: Section End-->
 
     </main>
-  
+
     <!--Footer Section  Start--> 
     <br> <br> <br>
     <footer>
+    <div>
         <h3>Follow Me</h3>
-        <ul>
-            <li>    <a href="https://www.facebook.com/shakilhossain404"><i class="fa-brands fa-facebook"></i>Connect With My Facebook</a></li>
-            <li><i class="fa-brands fa-twitter"></i></li>
-            <li>  <i class="fa-brands fa-linkedin"></i></li>
-            <li> <i class="fa-brands fa-instagram"></i></li>
-            <li>  <a href="tel:+88016XXXXXXXX"><i class="fa-solid fa-phone"></i></a>You Can Me</li>
-        </ul>
+    </div>
+          
     
+  <div>
+    <ul>
+        <li>    <a href="https://www.facebook.com/shakilhossain404"><i class="fa-brands fa-facebook"></i>Connect With My Facebook</a></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li>  <i class="fa-brands fa-linkedin"></i></li>
+        <li> <i class="fa-brands fa-instagram"></i></li>
+        <li>  <a href="tel:+88016XXXXXXXX"><i class="fa-solid fa-phone"></i></a>You Can Me</li>
+    </ul>
 
-      
+  </div>
        
-      
-        
-
 
 
 
